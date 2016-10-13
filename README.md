@@ -6,7 +6,9 @@ store while playing else Heart.Break() game.
 Check out the game here if you are not familiar: [elseheartbreak.com](http://elseheartbreak.com/).
 Language of the scripts is *Sprak*, the hacking language of the game.
 
-## Explanation (may contain spoilers)
+*This repo may contain spoilers!*
+
+## Explanation
 
 Since the game enables us to copy-paste code and text in and out i copied out
 everything I thought it will be useful or just simply interesting to study. These mostly include all floppies that I stumbled upon and some codes hacked 
