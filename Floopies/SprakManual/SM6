@@ -1,0 +1,53 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 6 --- Arrays
+====================
+
+Arrays are a way of combining several values into
+one structure that can be manipulated and passed
+around as a single unit. It's very handy!
+
+Here's one way to create an array:
+
+array numbers = [10, 5, 7, 123]
+
+The '[' and ']' surround the numbers or whatever
+you want to put into the array, kind of like the 
+sides of a box or something...
+
+This array (called 'numbers') now contains the
+four numbers 10, 5, 7 and 123. We can get them out 
+of the variable by using the indexing operator,
+which looks like this:
+
+Print(numbers[0])
+Print(numbers[1])
+Print(numbers[2])
+Print(numbers[3])
+
+This will print each one of the "slots" in the array,
+starting with the '10' in the first slot and ending with
+'123' in the last one. Note that the indexing of the
+array starts at 0 and ends at 3. This is a weird standard
+that most programming languages follow and you just 
+need to accept that it feels a bit strange.
+
+The indexing operator can also be used to assign new values
+to somewhere in the array:
+
+numbers[1] = 666
+
+Now the 'numbers' variable will contain [10, 666, 7, 123]
+Be careful with this so you don't create bugs! Manipulating
+arrays in this way can be tricky.
+
+There is a function called 'Count' that 
+counts how many things there are in an array. 
+Just pass the array to 'Count' like this:
+
+Count(numbers)   # the function returns 4 in this case
+
+There are more tricks and functions that use
+arrays but this is a good start.

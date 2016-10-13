@@ -1,0 +1,10 @@
+# MissingPersonFinder
+
+loop
+    ClearText()
+    Print("MissingPersonFinder")
+    Print("===================")
+    var name = Input("Enter name: ")
+    Print(GetPosition(name))
+    Input("")
+end

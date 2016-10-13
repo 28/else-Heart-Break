@@ -1,0 +1,107 @@
+ClearText()
+
+Print("Welcome to PLAY STATION")
+Print("-----------------------")
+Print("")
+Print("The latest in home entertainment")
+Print("")
+Input("Press enter to start...")
+Sleep(1)
+PlaySound("Powerup 4")
+
+StartGame()
+
+# Game loop
+loop
+    string command = Input("> ")
+    if command == "look"
+        PlaySound("Blip 3")
+        Look()
+    else if command == "think"
+        PlaySound("Blip 3")
+        Think()
+    else if command == "use"
+        PlaySound("Blip 3")
+        Use()
+    else if command == "exit"
+        PlaySound("Shoot 4")
+        break
+    else
+        PlaySound("Shoot 3")
+        Help()
+    end
+end
+
+ExitGame()
+
+
+
+# FUNCTIONS
+
+void StartGame()
+    Fx()
+    Lock("BetweenFelixAndLongson_Door1")
+    ClearText()
+    SetPosition("PlayWife", "BetweenFelixAndLongson_Trigger_1")
+    Help()
+end
+
+
+void Help()
+    Print(" - AVAILABLE COMMANDS - ")
+    Print("'think' - get information")
+    Print("'look' - list things in room")
+    Print("'use' - use something in the room")
+    Print("'exit' - turn off the game")
+    Print(" ---------------------- ")
+end
+
+
+void Think()
+    var pos = GetPosition("PlayWife")
+    Print(pos)
+    var action = GetAction("PlayWife")
+    if action == ""
+        action = "Doing nothing."
+    end
+    Print("Action: " + action)
+end
+
+void Look()
+    string roomName = GetRoom("PlayWife")
+    array stuff = GetThingsInRoom(roomName)
+    number i = 0
+    loop stuff
+        Print(i + ": " + @)
+        i++
+    end
+end
+
+void Use() 
+    Look()
+    Print("Use what item?")
+    number nr = Input("nr: ")
+    string roomName = GetRoom("PlayWife")
+    array stuff = GetThingsInRoom(roomName)
+    if nr >= 0 and nr < Count(stuff)
+        var obj = stuff[nr]
+        InteractWith("PlayWife", obj)
+    else
+        Print("Invalid nr")
+    end
+end
+
+void ExitGame()
+    SetPosition("PlayWife", "CharacterRoom_Point")
+    Unlock("BetweenFelixAndLongson_Door1")
+end
+
+
+void Fx()
+    ClearText()
+    loop from 1 to 30
+        Print("* * * * * * * * * * * * * * * * * * ")
+        Print(" * * * * * * * * * * * * * * * * * *")
+    end
+    ClearText()
+end

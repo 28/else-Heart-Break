@@ -1,0 +1,59 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 7 --- Loops
+===================
+
+Loops are used to make a block of code
+run over and over again, like this:
+
+loop
+    Print("Hello!")
+end
+
+This will keep on printing "Hello!" forever
+and ever, or at least until someone turns off 
+the computer, or something like that...
+
+A loop can also be interrupted from inside
+using the 'break' keyword:
+
+loop
+    if IsDone()
+        break
+    end
+end
+Print("Done!")
+
+This code will keep looping until the function
+'IsDone' returns true, upon which execution will
+continue below the loop and the program 
+will print "Done!".
+
+A loop can also loop "through" an array. This is 
+very simple, just add the array after the 'loop' keyword:
+
+loop [1, 2, 3, 4, 5]
+    # do something five times
+end
+
+Usually you want to access the elements in the array.
+Then you have to give it a name:
+
+array a = [1, 2, 3, 4, 5]
+
+loop x in a
+    Print(x)
+end
+
+This will print each thing that is stored in the array!
+If you want to loop through a range of numbers, say 0 up
+to 100 you can do that with the 'from' ... 'to' keywords:
+
+loop x from 0 to 100
+    Print(x)
+end
+
+This is much more efficient than creating an array with
+all those numbers in it.

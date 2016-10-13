@@ -1,0 +1,36 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 8 --- Manipulating text
+===============================
+
+SPRAK's tools for manipulating text
+are few and kind of simplistic. It's still
+important to know them though. Without
+good textual output and input a lot of
+programs would suffer from very poor usability.
+
+The most important operation is representing 
+different kinds of data as text.
+This is usually automatically done whenever
+a function needs text. For example
+the print function:
+
+Print(10)
+
+This will output the text "10", just as expected.
+Somewhat more interesting is the '+' operator
+which can be used to put together longer
+strings:
+
+Print("X has the value " + X)
+
+This will automatically convert X to a
+string and print something like 
+"X has the value 42", if X has the value 42.
+
+You can also print arrays but if they are
+long they might get cut off half-way through
+to fit on the screen and not create
+enormous strings.

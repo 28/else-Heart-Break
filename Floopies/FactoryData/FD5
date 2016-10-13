@@ -1,0 +1,17 @@
+TYPES
+=====
+["ore", "gold", "silver", "crystal", "iron"]
+
+QUALITY
+=======
+0 - 3 Abysmal
+4 - 5 Rough
+6 - 8 OK
+9     Great
+10    Perfect
+
+
+
+# - MEMORY KEYS -
+# W311SPRNG
+# MONADOOR

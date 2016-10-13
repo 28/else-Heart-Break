@@ -1,0 +1,35 @@
+
+I've been tracking these… "Ministry" dudes, 
+and I think I'm on to something.. 
+This is what I've learned:
+
+All computers and crazy machines in the city 
+is tapped by the ministry. 
+My tests and analysis shows different messages 
+hidden in the sounds they are making. 
+The ones I've collected and experimented on are:
+
+Electricity 1
+Electricity 2   (This one is evil..) 
+
+Guardian         (Guarding the you know what.. the www)
+
+ComputerSound 1
+ComputerSound 2
+ComputerSound 3  (Cant figure this one out..)
+ComputerSound 4 
+
+Thunder 1
+Thunder 2
+
+Atmosphere 1   
+(Don't know if this is the work of the Ministry)
+
+Atmosphere 2
+
+You can run them on any playable object 
+that you can hack. 
+Just remember that they may have altered 
+the pitch of the object in itself... 
+So it might not play at its normal speed. 
+Just type PlaySound("SoundName")

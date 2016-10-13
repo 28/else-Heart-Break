@@ -1,0 +1,24 @@
+ClearText()
+
+Print("GUARD INSTRUCTIONS")
+
+Sleep(1)
+Print("1. Only ever let ")
+Print("   George through the")
+Print("   door into the")
+Print("   mayor's apartment.")
+
+Sleep(1)
+Print("2. Never leave ")
+Print("   your position!")
+Sleep(1)
+
+Print("3. Make sure the ")
+Print("   doors on ALL sides")
+Print("   of the building ")
+Print("   are locked. Don't forget")
+Print("   the one in the back!")
+Sleep(1)
+
+Print("4. Never slouch.")
+Sleep(1)

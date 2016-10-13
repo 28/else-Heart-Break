@@ -1,0 +1,71 @@
+I don't even know why they thought it was Rouven. 
+It'd take a totally different kind of character  
+to dish out freebies like that... Only a true friend 
+looks out for you even in the darkest of times.  
+Old habits die hard.  A good gun will never "Rust".
+
+Ehe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fn main() {
+    let program = "+ + * - /";
+    let mut accumulator = 0i;
+
+    for token in program.chars() {
+        match token {
+            '+' => accumulator += 1,
+            '-' => accumulator -= 1,
+            '*' => accumulator *= 2,
+            '/' => accumulator /= 2,
+            _ => { /* ignore everything else */ }
+        }
+    }
+
+    println!("The program \"{}\" calculates the value {}",
+              program, accumulator);
+}

@@ -1,0 +1,94 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 4 --- Functions
+=======================
+
+Functions are the main tool for abstraction
+and simplification in programming. Basically
+it gives your code super powers by making
+something a self contained unit and parameterizing
+it. This all sounds very abstract and perhaps
+not very useful in itself, so let's check out
+some examples.
+
+First of all, here's how you CALL a function:
+
+Print("Hello!")
+
+This will make the computer print the text "Hello!"
+(without the quotes) to the screen - if it is a 
+computer with a monitor, that is!
+
+In that case the name of the function was Print
+and the parameter was "Hello!". By using different
+parameters we can make the function behave
+differently each time we call it.
+
+This function might seem a bit strange, at least 
+if you're used to functions in math. The weird thing
+is that it doesn't return anything! Functions
+in SPRAK don't need to do that, so that's totally fine.
+
+We often want to use functions that return 
+values though, so here's how:
+
+number x = Max(13, 10)
+
+This will assign the return value from the function Max
+to the variable 'x'. Max takes two parameters and returns
+whichever one is the largest. In this case it is 13 so
+'x' will get that value.
+
+We could also use variables or other functions as
+parameters to the Max function, like this:
+
+number x = Max(Random(), 0.5)
+
+The Random function doesn't take any parameters and
+returns a random value between 0.0 and 1.0. This random
+value is compared to 0.5 and the biggest one is selected
+and assigned to 'x'.
+
+Writing your own functions is pretty simple and
+looks a bit like defining variables. You could even
+say that a function is a variable containing a piece
+of code, so it makes sense to think about it that way.
+
+Here's my attempt at writing my own function for
+calculating the area of a circle:
+
+number AreaOfCircle(number radius)
+    return radius * radius * 3.1415
+end
+
+There are many different parts to this code so let's
+pull it all apart. The first line explains what kind
+of value the function will return (a number), the name of
+the function itself ('AreaOfCircle') and finally what
+parameters it accepts (a single number called 'radius').
+
+The names used for the parameter is only known inside 
+the function - someone using the AreaOfCircle function does 
+not need to know anything about it.
+
+Inside the function, between the first line and the last
+one containing the final 'end', we have the code that
+will run when this function is called. In this particular
+case we multiply 'radius' with itself and with Pi, 
+then return that particular result to the caller.
+
+To use this function we could do something like this:
+
+number a = AreaOfCircle(3.0)
+
+The variable 'a' would now contain the value 
+of 3.0 * 3.0 * 3.1415, which is something like 28.27
+
+If you want to see if an object has a certain function
+you can use the function HasFunction(), like this:
+
+if HasFunction("Print")
+    Print("Hello")
+end

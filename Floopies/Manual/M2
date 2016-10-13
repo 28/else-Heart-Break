@@ -1,0 +1,21 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER
+===================================
+
+*** Chapter 5: Autocomplete ***
+
+The section at the lower part of your
+modifier ("help area") has a list of 
+functions available to you when programming.
+
+Start writing the name of a function
+to limit the number of options and 
+find it in the list of suggestions.
+
+If you press the TAB key, the highlighted
+option will be inserted into the code
+with a starting parenthesis: (
+
+When entering arguments to a function
+the help area will show documentation
+for each argument.

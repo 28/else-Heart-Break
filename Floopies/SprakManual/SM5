@@ -1,0 +1,84 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 5 --- If statements
+===========================
+
+Time for some fun! The if statement is
+a central part of what makes computers
+able to "think". It selects different paths 
+through the code, depending on if 
+something is true or not. Kind of like
+a railroad switch with a little guy 
+checking which way the current train should go.
+
+For example, let's say that we have a variable
+named 'SECRET', containing either the value 
+'true' or 'false', we don't know which.
+
+How can we find out?!
+By using an if-statement of course:
+
+if SECRET
+    Print("true!")
+end
+
+There are several interesting things to note
+here. First of all the use of the two words
+'if' and 'end'. These two go together like
+a pair. The 'end' word shows where the block
+of code ends. Everything in between will happen
+if the variable called 'SECRET' contains the 
+value 'true'. In this case it will print "true!".
+On the other hand, if the variable contains 
+'false' nothing will happen at all.
+
+What if we want to print something in that 
+case too? Here's one way to do it:
+
+if SECRET
+    Print("true!")
+else
+    Print("false!")
+end
+
+You could do several things in the block 
+between 'if' and 'end'. Don't be confused by
+the text being moved a bit to the right, that's
+just for readability.
+
+if SECRET
+    Print("The")
+    Print("SECRET")
+    Print("is")
+    Print("true!")
+end
+
+It is possible to have even more cases
+by using the following notation:
+
+if a
+    # do something
+else if b
+    # do something else
+else if c
+    # do this if c is true (but a and b are false)
+else
+    # do this if a, b and c are all false
+end
+
+
+Finally, several variables or expressions 
+containing logical values (true / false) 
+can be checked together using the word 'and'
+and 'or':
+
+if a and (b or c)
+    # this will happen if a and b
+    # OR a and c are true
+end
+
+Don't worry if this seems confusing, just
+come back later and re-read any section
+that didn't make sense the first time.

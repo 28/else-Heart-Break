@@ -1,0 +1,58 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 2 --- Variables
+=======================
+
+Variables are used for naming things. This might
+seem like a trivial task but do not be deceived,
+the ability to name things is one
+of the most important things of all in programming.
+The reason for this is that it allows us to
+abstract and handle the components of our solution
+in a symbolic way.
+
+For example: instead of referring to your name as
+a string of characters like "Lisa" we can create
+a variable containing this value. The variable
+might be called something like 'name' and could
+even refer to different names at different points
+in time, depending on the needs of the program.
+
+Here are some examples of how to create variables:
+
+number x = 10
+string myName = "Simon"
+bool itIsChristmas = false
+
+Notice the words to the left, like 'number', 'string'
+and 'bool'. Those are TYPES and they describe what
+kind of data we want to put inside the variable.
+After that comes the variable name. This should be
+something descriptive that explains what kind of thing
+we have put inside the variable.
+
+Next up is the equal sign, '='
+This means that we set the value of the variable to
+whatever is on the right side.
+
+Variables can be re-set to other values by using the
+equal sign, like this:
+
+x = 11
+myName = "Simone"
+itIsChristmas = true
+
+This requires the variables to have already been declared
+earlier in the program using the syntax above with
+a type and a name (like 'number x = 10' for example).
+
+If a variable contains a number type it can be changed
+in some additional ways just for convenience, saving
+a few key strokes:
+
+x++      # Increase by one
+x += 10  # Increase by 10
+x--      # Decrease by one
+x -= 20  # Decrease by 20

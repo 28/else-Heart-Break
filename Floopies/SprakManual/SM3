@@ -1,0 +1,67 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 3 --- Math
+==================
+
+Don't let this chapter scare you! You don't
+need to be a math whiz to do programming.
+Curiosity and logical thinking will take you
+much further, trust me.
+
+Still, it is often very useful to perform
+different kinds of math operations in your
+code.
+
+The basic ones are:
+
++  # plus
+-  # minus
+*  # multiplication
+/  # division
+
+These operations can be used in the
+following manner:
+
+number x = 10 + 20
+number y = x * 2
+number z = y - 1
+
+Now x will have the value 30, y will be 60
+and z will be 59. Make sure you understand
+why this is and how each variable depends
+on the one defined before it.
+
+You can also construct more complex, compound
+math statements like the following one:
+
+x = 10 / y * z + 1
+
+The operators follow regular operator precedence,
+which means that  the * and / will be calculated
+before + and - .
+
+To change this, parenthesis can be used:
+
+x = 10 / y * (z + 1)
+
+Different computer systems might have other math 
+operations available as FUNCTIONS (see Chapter 5).
+
+There are some more math operators that are quite
+handy, like the following ones:
+
+<   # less than
+<=  # less than or equal
+>   # greater than
+>=  # greater than or equal
+==  # equal
+!=  # not equal
+
+They are used similarly to +, -, * and / but
+return true or false as their result:
+
+30 < 20  # false
+5 <= 5   # true
+100 != 0 # true

@@ -1,0 +1,41 @@
+DisconnectAll()
+ClearText()
+
+Print("")
+Print("*******************")
+Print("Enter target door: ")
+var target = Input("")
+
+var id = Connect(target)
+
+if id < 0
+    Print("Failed to connect")
+    return
+end
+
+loop x from 0 to 99999
+    Print("Trying code: " + x)
+    var success = id.Unlock(x)
+    if success
+        Print("Unlocked!")
+        Print("*******************")
+        break
+    end
+end
+
+#Goto("MonadsApartment_DoorToPlaza")
+
+# Door list (to unlock and to Goto()): 
+# ------------
+#  * TownHall_DoorToLongsonOffice
+#  * Factory_Corridor_DoorToOffice
+#  * Hotel_Office_DoorToBasement
+#  * RentingApartmentsLobby_DoorToDesolateHouse
+#  * Factory_Floor2_DoorToStationNorth
+#  * OutsideFelixApartment_Door2
+#  * Plaza_DoorToMonadsApartment
+#  * MinistryDoorToOffices1
+#  * Lodge_Underwater_DoorToRoom2
+#  * MonadsApartment_DoorToPlaza
+#  * Ministry_MonadsOffice_DoorToCorridor3_FISH
+#  * Internet_Door_13

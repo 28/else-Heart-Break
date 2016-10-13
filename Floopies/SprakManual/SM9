@@ -1,0 +1,41 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 9 --- Objects and methods
+=================================
+
+This is the final and perhaps most exciting
+chapter of this whole manual. We have now
+reached the most powerful construct of
+Sprak, the dot operator.
+
+The dot operator is used to call functions
+in OTHER objects. These functions are usually
+called methods to differentiate them from
+normal functions. 
+
+Since such a method can do things to
+the object it is attached to, and even call
+other methods in other objects, the power
+that comes with the dot operator is immense.
+
+Please wield it carefully and try not to make a mess.
+
+Here's how you use it. First connect to
+another object:
+
+var o = Connect("HomeComputer")
+
+Then use the connection
+(stored in the variable 'o' in this case)
+together with the dot operator to call a method:
+
+o.Print("Hello at home!")
+
+This will make the computer that you connected
+to print the message "Hello at home!" on its
+monitor. 
+
+This requires access to the internet, naturally.
+

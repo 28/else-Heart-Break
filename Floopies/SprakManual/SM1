@@ -1,0 +1,60 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+#####################################
+
+Chapter 1 --- Introduction to problem solving
+=============================================
+
+How do you solve a problem? This is a tricky question
+for sure. After all, every problem is unique and
+needs its own unique solution. Or does it?
+
+A lot of similar, related problems in programming
+come up again and again. An experienced programmer
+might not have to think consciously at all about
+how to solve such situations. The right answer just
+appears in her or his head and can be typed into 
+the computer without much thought at all.
+
+But how does one learn how to perform such a feat?
+"Read code!" is an oft-repeated mantra for
+the young and inexperienced programmer. This tip
+is very good, naturally, but can be hard to follow
+in practice. Many real-world solutions are both messy 
+and poorly structured, with many strange details that
+make them both hard to read and reason about.
+
+Without guidance a page of code might be almost
+impossible to understand for anyone except its author
+(and sometimes even her or him). Still, it IS very much
+worthwhile trying to understand other people's code and 
+pick up little things here and there, trying to find
+patterns and exploring another person's solutions.
+
+A very good trick indeed can be to rewrite someone
+else's code with your own style and improvements.
+This helps tremendously with understanding the flow
+and connections in the written code.
+
+But back to problem solving! The main method of
+solving a problem, in programming and otherwise,
+is to DECONSCTRUCT the problem and solve each
+component individually. This simple method has proven
+to be incredibly effective and lies at the heart
+of both functional composition (see Chapter 5) and
+object orientation (see Chapter 9).
+
+By breaking things down into smaller and smaller 
+pieces, something big and tangled can become quite
+small and manageable. How to do this well is something
+we will touch upon again and again throughout this
+text. By analyzing the problem at hand and then trying
+to take it apart and putting it together with the
+different constructs you will learn in the following
+chapters, hopefully you too can become a master of
+problem solving!
+
+Finally, if nothing works and a solution completely
+eludes you - take a nap, walk away from your machine,
+go for a walk or grab a sandwich. Nothing helps 
+problem solving as much as sleep and some fresh air.

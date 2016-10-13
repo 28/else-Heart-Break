@@ -1,0 +1,46 @@
+ClearText()
+Print("Welcome to cracked Wellspring commputer. :)")
+Menu()
+
+loop
+	string input = Input("> ")
+	if input == "1"
+		var amount = GetAmount()
+		var name = GetUser()
+		if(name != "Sebastian")
+			Print("You are not Sebastian!")
+			break
+		end
+
+		var financeComputer = Connect("FinanceComputer")
+		financeComputer.ChangeBalance(name, amount)
+		Print("Added " + amount + "to " + name + " acount.")
+	else if input == "2"
+		var amount = GetAmount()
+		var name = GetUser()
+		if(name != "Sebastian")
+			Print("You are not Sebastian!")
+			break
+		end
+
+		var wellspringer = Connect("Wellspringer")
+		wellspringer.RegisterSeller(name, amount)
+		Print("Added " + amount + "to " + name + " sales.")
+	else
+		Print("Unknown command!")
+	end
+end
+
+number GetAmount()
+	var amount = Input("Amount to add > ")
+	if(amount < 0)
+		amount = -amount
+	end
+	return amount
+end
+
+void Menu()
+	Print("Commands:")
+	Print("1. AddMoney")
+	Print("2. RegisterSales")
+end

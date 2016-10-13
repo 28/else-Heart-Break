@@ -1,0 +1,12 @@
+
+Refining process
+================
+
+The goods can be refined in 16
+unique positions.
+
+Currently the refine function
+has a 25% chance of error
+which will reset the goods' quality
+at the current position to
+'u', 'v', 'w', 'x', 'y' or 'z'

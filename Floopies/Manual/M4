@@ -1,0 +1,17 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER
+===================================
+
+*** Chapter 2: The Compiler ***
+
+A compiler is a program that takes 
+source code in the form of 
+text and transforms it into
+something that can be executed 
+by the computer.
+
+If any errors are discovered
+during the compilation step
+they will be presented to the
+programmer in the "help area",
+the lower part of the modifier.

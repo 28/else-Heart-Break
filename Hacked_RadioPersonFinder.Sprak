@@ -1,0 +1,6 @@
+var c = Connect("PoliceOfficeInterior_MinistryOfficeWorkstationComputer_1")
+
+Print(c.GetPosition("Pixie"))
+
+# Ivan
+# Monad

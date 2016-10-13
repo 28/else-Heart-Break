@@ -1,0 +1,9 @@
+string trashType = GetType()
+if trashType == "floppy" or trashType == "key"
+	MoveToRoom("Hotel_Room1")
+else
+	Delete()
+end
+
+# or just
+# MoveToRoom("Hotel_Room1")

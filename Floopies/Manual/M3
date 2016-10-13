@@ -1,0 +1,17 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER
+===================================
+
+*** Chapter 4: Errors ***
+
+When errors are detected, either
+during compilation (see floppy 4)
+or when the program is running,
+execution will stop and the error
+will be presented in the "help area",
+the lower part of the modifier window.
+
+In case of a runtime error it's
+possible to start the program again,
+either by activating the object
+or by compiling the code again.

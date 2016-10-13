@@ -1,0 +1,54 @@
+ClearText()
+
+Print("***************")
+Print("* MOON LANDER *")
+Print("***************")
+Print("")
+Print("Can you land")
+Print("safely on the moon?")
+Print("")
+Sleep(2)
+
+number gas = 10000
+number altitude = 100.0 + Random() * 300.0
+number speed = -10.0
+
+loop
+    PrintStats()
+    number x = Input("How much fuel to use?")
+    if x > gas
+        Print("Not enough fuel!")
+        x = gas 
+    end
+
+    gas -= x
+    speed += gas
+    altitude += speed
+    speed -= 1.6
+
+    gas = Round(gas)
+    altitude = Round(altitude)
+
+    if altitude < 0
+        Print("You crashed!")
+        PlaySound("Explosion 1")
+        break
+    else if altitude < 5 and speed > -50.0
+        Print("You landed safely")
+        Print("on the moon!")
+        Print("")
+        Print("GOOD JOB")
+        break
+    else
+        Print("")
+        Print(" * * * * * * * * * ")
+        Print("")
+    end
+end
+
+
+void PrintStats()
+    Print("Fuel: " + gas)
+    Print("Altitude: " + altitude)
+    Print("Speed: " + speed)
+end

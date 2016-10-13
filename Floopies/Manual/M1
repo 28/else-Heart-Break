@@ -1,0 +1,15 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER
+===================================
+
+*** Chapter 11: Comments ***
+
+A comment in the code is ignored
+by the compiler. You can create
+a comment by typing the # sign.
+
+Any text on the line to the right
+of the # sign will be ignored.
+
+Be helpful to your future self
+and others - comment your code!
