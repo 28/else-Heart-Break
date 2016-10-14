@@ -38,4 +38,4 @@ me because it was fun the every minute of it.
 
 All in all it's a great game to play and to study from the game design, game
 play design, game and game world philosophy and game programming at all. A
-certain recommend to everyone.
+certain recommend to everyone in need of a challenge.
