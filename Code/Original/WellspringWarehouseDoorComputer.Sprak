@@ -1,0 +1,66 @@
+var password = "abc123"
+
+ClearText()
+Print("-- WELLSPRING SODA INC. --")
+Print("This program may only be used by authorized personnel.")
+Print("Enter command and then press RETURN, type H for help.")
+Print("")
+
+loop
+	string s = Input("> ")
+	
+	if s == "h" or s == "H"
+		Help()
+	else if s == "lock"
+		Print("locking...")
+		Lock("HarborWest_DoorToSodaStorage")
+	else if s == "unlock"
+		loop
+			var input = Input("Enter password: ")
+			if input == password
+				Print("Unlocking door...")
+				Unlock("HarborWest_DoorToSodaStorage")
+				break
+			else
+				Print("Invalid password! Try again: ")
+			end
+		end
+	else if s == "register"
+		Print("Register sales")
+		Print("--------------")
+		var input = Input("Enter password: ")
+		if input == password
+			var name = GetUser()
+			var amount = Input("Enter amount of money earned:")
+			
+			if amount < 0
+				amount = -amount
+			end
+
+			var wellspringer = Connect("Wellspringer")
+			wellspringer.RegisterSeller(name, amount)
+
+			var financeComputer = Connect("FinanceComputer")
+			financeComputer.ChangeBalance(name, -amount)
+
+			Print("Registered sales for " + name + ": $" + amount)
+		else
+			Print("Invalid password")
+		end
+	else
+		Print("")
+		Print("Can't understand what that means")
+		Print("")
+		Help()
+	end
+
+end
+
+void Help()
+	Print("AVAILABLE COMMANDS:")
+	Print("lock")
+	Print("unlock")
+	Print("register")
+	Print("")
+	Print("Enter the command, followed by return key.")
+end
