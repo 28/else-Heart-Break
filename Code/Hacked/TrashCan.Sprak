@@ -1,9 +1,10 @@
 string trashType = GetType()
 if trashType == "floppy" or trashType == "key"
-	MoveToRoom("Hotel_Room1")
+	MoveToRoom("SodaStorage")
 else
 	Delete()
 end
 
-# or just
-# MoveToRoom("Hotel_Room1")
+# Rooms:
+# SodaStorage
+# Hotel_Room1

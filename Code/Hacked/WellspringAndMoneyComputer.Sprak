@@ -26,6 +26,17 @@ loop
 		var wellspringer = Connect("Wellspringer")
 		wellspringer.RegisterSeller(name, amount)
 		Print("Added " + amount + "to " + name + " sales.")
+	else if input == "3"
+		Print("locking...")
+		Lock("HarborWest_DoorToSodaStorage")
+	else if input == "4"
+		if(name == "Sebastian")
+			Print("Unlocking door...")
+			Unlock("HarborWest_DoorToSodaStorage")
+		else
+			Print("You are not Sebastian!")
+			break
+		end
 	else
 		Print("Unknown command!")
 	end
@@ -43,4 +54,6 @@ void Menu()
 	Print("Commands:")
 	Print("1. AddMoney")
 	Print("2. RegisterSales")
+	Print("3. Lock Door")
+	Print("4. Unlock Door")
 end

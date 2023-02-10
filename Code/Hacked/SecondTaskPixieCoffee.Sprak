@@ -1,0 +1,7 @@
+var user = GetUser()
+
+if (user == "Pixie")
+    Charisma(25000)
+else
+    Smelliness(100)
+end

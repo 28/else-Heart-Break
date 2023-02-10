@@ -1,0 +1,46 @@
+PlaySound("Coin 1")
+Bar()
+Print("Aniara OS v 3.5.0.1")
+Print("* * * * * * * * * *")
+Print("(C) J.L. et al, 1992 - now")
+Print("Released under The GNU")
+Print("General Public License v3.0")
+Bar()
+
+loop
+    string cmd = Input("> ")
+    string dir = "root"
+    number id = -1
+
+    if cmd == "cd"
+        Print("ROOT")
+    else if cmd == "h" or cmd == "help"
+        Print("Available commands:")
+        Print(" - connect")
+        Print(" - store")
+        Print(" - restore")
+        Print(" - remoteCall")
+    else if cmd == "connect"
+        string connectionName = Input("Name: ")
+        id = Connect(connectionName)
+    else if cmd == "store"
+        string key = Input("Key: ")
+        string data = Input("Data: ")
+        SaveMemory(key, data)
+        Print("Data was saved.")
+    else if cmd == "restore"
+        string key = Input("Key: ")
+        Print(LoadMemory(key))
+    else if cmd == "remoteCall"
+        string fnName = Input("Function name: ")
+        RemoteFunctionCall(id, fnName, [])
+    else
+        Print("Can't understand command " + cmd)
+        Print("Enter h for help.")
+    end
+    Sleep(1)
+end
+
+void Bar()
+    Print("===================")
+end
