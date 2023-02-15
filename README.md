@@ -1,41 +1,41 @@
 # else Heart.Break()
 
-This repository is a collection of stuff that I found helpful and interesting to
-store while playing else Heart.Break() game.
+**This repository contains spoilers!**
 
-Check out the game here if you are not familiar: [elseheartbreak.com](http://elseheartbreak.com/).
-Language of the scripts is *Sprak*, the hacking language of the game.
+This repository is a collection of stuff that I found helpful
+and interesting to store while playing [*else Heart.Break()*](http://elseheartbreak.com/)
+game. Buy the game [here](https://www.gog.com/en/game/else_heartbreak).
 
-**This repo may contain spoilers!**
+Most of the files are in *Sprak*, the hacking/programming language of the game.
 
-## Explanation
+## Repository layout
 
-Since the game enables us to copy-paste code and text in and out i copied out
-everything I thought it will be useful or just simply interesting to study. These mostly include all floppies that I stumbled upon and some codes hacked 
-from various devices. Also I saved some codes I wrote/modified during the game.
-Files with prefix Origin_ are unchanged game codes and those with Hacked_ have
-been more or less modified or created by me.
+While playing the game I collected every bit of information I found
+and put it in this repository. Every floppy I found is in the [Floppies](/Floppies)
+repository folder. After the first playthrough I added the remaining floppies
+from the game files just to complete the collection.
 
-There are more floppies in the game (look at the game files) but these were the most interesting to me so I wanted to have them in one place. At the end of the game I just copied the missing one from game files (to complete the collection :)).
+I have copied any interesting code to the [Original](/Code/Original) folder verbatim.
+It is easier to analyze it outside the game.
 
-## My impression of the game
+All the code that I've written is in the [Hacked](/Code/Hacked) folder.
 
-I find the game quite original, fun and challenging. I would recommend it to
-everyone who likes this kind of game. I would also recommend it to both newbie
-and experienced programmers/hackers and even non programmers for the purpose of
-learning in a very fun way.
+## Usage
 
-The fun comes in the form of exploring the world and hacking the life out of
-every object possible. Exploring comes tight with collecting all the pieces of
-data you stumble upon. By "digging" through the Digital Trash I found a lot of
-stuff that helped me progress the game even though most of it is useless for the
-story but vital for the game "feel" itself. When it comes to the story itself
-it is really original and catchy but in my opinion not completed - not worked
-out completely. There is room for more elaboration in almost every part of the
-story. Also the story progression is kinda bad, sometimes I would walk for hours
-in circles trying to figure out what to do next. But that didn't come hard on
-me because it was fun the every minute of it.
+The game allows copy-pasting the code from outside the game.
+It's a bit easier to use a 'real' text editor when writing *Sprak* code.
+I use [Sublime](https://www.sublimetext.com/) text editor with
+a [plug-in](https://github.com/Eforen/sublime-syntax-sprak) designed just for *Sprak*.
+It supports syntax highlighting and code completion.
 
-All in all it's a great game to play and to study from the game design, game
-play design, game and game world philosophy and game programming at all. A
-certain recommend to everyone in need of a challenge.
+## Gameplay
+
+Advice: **"Hack the planet!"**
+
+Fun fact: *The entire game can be hacked!* Check the game installation folder.
+For more information about the game engine, dialog scripting and everything
+else used to build this game check the [game creator's GitHub profile](https://github.com/eriksvedang).
+
+## Game review
+
+**TBD**
