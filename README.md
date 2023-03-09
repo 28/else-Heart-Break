@@ -38,4 +38,5 @@ else used to build this game check the [game creator's GitHub profile](https://g
 
 ## Game review
 
-**TBD**
+I wrote [my review](https://theparanoidtimes.org/blog/2023/03/09/ehb-review/)
+of *else Heart.Break()*.
